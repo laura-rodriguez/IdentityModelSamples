@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="UwpSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UwpSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal">
+            <Button x:Name="btnSignIn" Click="BtnSignIn_ClickAsync" Margin="10,10,10,10">Sign In</Button>
+            <Button x:Name="btnUserInfo" Click="BtnUserInfo_ClickAsync" Margin="10,10,10,10">User Info</Button>
+            <Button x:Name="btnSignOut" Click="BtnSignOut_ClickAsync" Margin="10,10,10,10">Sign Out</Button>
+        </StackPanel>
+        <TextBox x:Name="txtOutput" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,40,10,10" IsReadOnly="True" TextWrapping="Wrap" />
+    </Grid>
+</Page>
